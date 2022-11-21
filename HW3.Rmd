@@ -25,3 +25,18 @@ $\beta = 1$
 
 **d.)** 
 $\hat{\beta} = \beta$
+
+
+**2-**
+**a)**
+It is inconsistent because for exponential discounting, preference are constant over time for an individual, thus in theory individual should not chose the option of going through H&R Block, as the utility between "now" and in 1 "week" is the same, and because the gain is diminished when tax prepare service are used, an individual will wait instead. 
+Another way would be to check if the discount factor $\delta$ is constant over time, if not we can sefely assume that there exist inconsistency. We are going to compare immediate gain, of 2000/12 USD with gains in 4-6-12 months.
+$Present\ value = PV = 2000/12$; $Future \space Value = FV = (t_4)2000/3; 2000/1$; $with\space \delta = \frac{PV}{2}$$
+we have :
+$$\delta_4 = (\frac{2000/12}{2000/3})^3 \approx 0.01565 \\ \delta_6 = (\frac{2000/12}{2000/2})^2 \approx 0.027 \\ \delta_{12} = (\frac{2000/12}{2000})^1 \approx 0.0833  $$
+
+**b)**
+hyperbolic discounting individuals have a dis-utility regarding future gains. This means that they have extract more value over immediate gain over long. Therefore, because the first option imply a gain by small monthly paycheck, the value associate to each new payment is becoming lowever over time instead of staying consistent. This explain why they choose the second option. The second inconsistency is in regard to the solicitation of a tax preparer, which imply a negative impact on their overall utility. In summary, these individual are displaying impatient choice in regard to future beneficial gain, yet chose less attractive option for immediate utility gain. 
+
+**c)**
+
