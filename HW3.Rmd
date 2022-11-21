@@ -6,4 +6,7 @@ output: pdf_document
 
 **1-**
 
+Before answering the questions, we need to specify in which context we are. We are in presence of an immediate relief (the anesthesia relieves the pain) and possible delayed costs (adverse effect on her and the baby's health later).
+
 **a)**
+
