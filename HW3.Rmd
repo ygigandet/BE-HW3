@@ -77,3 +77,20 @@ if she is sophisticated the, we have to look at the value backwards. The best op
 - T = 2 is to watch the movie in T = 2 because $8>6.5$
 - T = 1, because Alice knows that she will choose the 3d movie instead of the 4th one, she compares with her best choice. In this case it's to watch the 2nd movie, because $5 > 4$
 - T = 1, with the same principle she compares her prediction and decide to watch the first movie because $3 > 2.5$
+
+she now gets 3 ticket:
+
+- t = 1, she chooses $u_2, u_3, u_4$
+- t = 0, she chooses $u_1, u_2, u_3$
+
+c)
+- t = 0 she chooses $u_1, u_3, u_4$
+- t = 1 she chooses $u_2, u_3, u_4$
+therefore, she misses the 1st movie
+
+d)
+as seen in the second part of point b, she chooses $u_1, u_2, u_3$, therefore, she miss the 4th movie. 
+
+e)
+
+
