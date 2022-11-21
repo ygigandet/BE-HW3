@@ -64,8 +64,16 @@ summary of discounted utilities:
 
 Therefore we can see that:
 
-- T = 0, she prefers to watch the 4th movie, thus she does not go to the first movie. $2.5_{u_2} < 3_{u_1} < 4_{u_3} < 6.5_{u_4}$
-- T = 1, she still prefers the 4th movie, thus she does not go the the second film. $4_{u_3} < 5_{u_2} < 6.5_{u_4}$
-- T = 2, she perceived a higher utility in watching the 3rd movie now rather than wait for the last week $8_{u_3} > 6.5_{u_4}$
+- T = 0, she prefers to watch the 4th movie, thus she does not go to the first movie. 
+$2.5_{u_2} < 3_{u_1} < 4_{u_3} < 6.5_{u_4}$
+- T = 1, she still prefers the 4th movie, thus she does not go the the second film. 
+$4_{u_3} < 5_{u_2} < 6.5_{u_4}$
+- T = 2, she perceived a higher utility in watching the 3rd movie now rather than wait for the last week 
+$8_{u_3} > 6.5_{u_4}$
 
-
+b) 
+a sophisticate agent $\hat{\beta} = \beta$
+if she is sophisticated the, we have to look at the value backwards. The best option for Alice in :
+- T = 2 is to watch the movie in T = 2 because $8>6.5$
+- T = 1, because Alice knows that she will choose the 3d movie instead of the 4th one, she compares with her best choice. In this case it's to watch the 2nd movie, because $5 > 4$
+- T = 1, with the same principle she compares her prediction and decide to watch the first movie because $3 > 2.5$
