@@ -6,7 +6,7 @@ output: pdf_document
 
 **1-**
 In this situation we have the following variables:
-$Labour = payoff = V; anesthesia = effort = e, cost\space of\space effort = c(e)$
+Labour = payoff = $V$; anesthesia = effort = $e$, cost of effort = $c(e)$; Knowledge over the fact that she will face pain = $\theta$
 where:
 $$c(e) = \begin{cases} c > 0, & \mbox{if } e =1 \\ c = 0, & \mbox{if } e = 0 \end{cases}$$
 
