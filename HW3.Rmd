@@ -45,4 +45,27 @@ hyperbolic discounting individuals have a dis-utility regarding future gains. Th
 a time consistent agent with $\delta = 1;\space \beta = 1$ would chose the 4th movie since $u_1 < u_2 < u_3 < u_4$
 
 a)
-Because Alice is naive, she wrongly believes that she knows her future self, thus $\hat{\beta} = \beta = 1$, therefore, she will plan on watching the last movie.
+Because Alice is naive, she wrongly believes that she knows her future self, thus $\hat{\beta} = \beta = 1$, therefore, she will plan on watching the last movie. In reality she will chose the third movie because:
+summary of discounted utilities:
+
+| t         | t = 0 |     t = 1     |     t = 2    |    t = 3     | Ranking |
+| :--       | :--   | :--           | :--          | :--          | :--     |
+|From self  |       |               |              |              |         |
+|t = 0      | 3     | 0.5*5 = 2.5   | 0.5*8 = 4    | 0.5*13 = 6.5 | 2,3,1,0 |
+|perspective|       |               |              |              |         |
+|           |       |               |              |              |         |
+|From self  |       |               |              |              |         |
+|t = 1      |       | 5             | 0.5*8 = 4    | 0.5*13 = 6.5 | 2,3,1,  |
+|perspective|       |               |              |              |         |
+|           |       |               |              |              |         |
+|From self  |       |               |              |              |         |
+|t = 2      |       |               | 8            | 0.5*13 = 6.5 | 1,2     |
+|perspective|       |               |              |              |         |
+
+Therefore we can see that:
+
+- T = 0, she prefers to watch the 4th movie, thus she does not go to the first movie. $2.5_{u_2} < 3_{u_1} < 4_{u_3} < 6.5_{u_4}$
+- T = 1, she still prefers the 4th movie, thus she does not go the the second film. $4_{u_3} < 5_{u_2} < 6.5_{u_4}$
+- T = 2, she perceived a higher utility in watching the 3rd movie now rather than wait for the last week $8_{u_3} > 6.5_{u_4}$
+
+
