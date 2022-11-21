@@ -1,0 +1,9 @@
+---
+title: "Take-home - problem set 3"
+author: "Clarence Koehle & Yooby Gigandet"
+output: pdf_document
+---
+
+**1-**
+
+**a)**
