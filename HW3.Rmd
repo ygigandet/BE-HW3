@@ -7,3 +7,17 @@ output: pdf_document
 **1-**
 
 **a)**
+i) she would decide to not take anesthesia
+ii) she would predict that she will not take the anesthesia since she believes that she is rational $\beta = \hat{\beta} = 1$
+iii)
+
+**b)**
+i) she would decide to not take anesthesia
+ii) she would predict that she will not take the anesthesia since $\beta = \hat{\beta}$
+iii)
+
+**c.)** 
+$\beta = 1$
+
+**d.)** 
+$\hat{\beta} = \beta$
