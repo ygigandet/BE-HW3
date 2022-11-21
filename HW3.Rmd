@@ -41,3 +41,8 @@ hyperbolic discounting individuals have a dis-utility regarding future gains. Th
 
 **c)**
 
+**3-**
+a time consistent agent with $\delta = 1;\space \beta = 1$ would chose the 4th movie since $u_1 < u_2 < u_3 < u_4$
+
+a)
+Because Alice is naive, she wrongly believes that she knows her future self, thus $\hat{\beta} = \beta = 1$, therefore, she will plan on watching the last movie.
