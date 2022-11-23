@@ -82,14 +82,13 @@ $6.5 < 8 = u_4 < u_3$
 
 Sophisticated Alice gets 3 ticket, therefore:
 
-- At t = 3, she decides to watch the movie on week 3 and 4
-$6.5 < 8 = u_4 < u_3$
 
-- At t = 2, she decides to watch the movie on week 2, 3 and 4.
+- At t = 2, she prefers to watch the movie on week 2, 3 and 4:
 $4 < 5 < 6.5 = u_3 < u_2 < u_4$
 
-- At t = 1, she decides to watch the movie on week 1 as well.
+- At t = 1, she prefers to switch the second movie by the first one as:
 $2.5 < 3 < 4 < 6.5 = u_2 < u_1 < u_3 < u_4$
+Thus, she prefers to miss the second movie.
 
 **NOT SURE ABOUT THIS ONE**
 
