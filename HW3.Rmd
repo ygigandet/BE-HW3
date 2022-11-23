@@ -6,7 +6,23 @@ output: pdf_document
 
 **1-**
 
-Before answering the questions, we need to specify in which context we are. We are in presence of an immediate relief (the anesthesia relieves the pain) and possible delayed costs (adverse effect on her and the baby's health later).
+Let $v = (v_t)$ be the relief from the anesthesia and let $c = (c_t)$ be the future costs of the anesthesia on her and the baby's health.
+
+**One note: if naïve, never worry that your tomorrow self might choose an option you do not like today.**
+
+The anesthesia is considered as an immediate rewards and delayed costs. If she chooses to take the anesthesia in period $\tau$, then her intertemporal utility in period $t \le \tau$ is:
+
+$$ 
+U_t(\tau) = \begin{cases}  v_\tau - \beta c_\tau\,  & , \space  \space t = \tau \\ 
+\beta v_\tau - \beta c_\tau\,  & ,\space  \space t < \tau  \end{cases}
+$$
+In the model above, we have made the assumption that $\delta = 1$
 
 **a)**
+
+**i)**
+
+If she is a naive hyperbolic discounter, she mistakenly believes that $\hat\beta = \beta = 1$ when in fact $\beta < \hat\beta = 1$. 
+
+Hence, she will 
 
