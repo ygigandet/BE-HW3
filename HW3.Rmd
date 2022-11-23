@@ -8,7 +8,7 @@ output: pdf_document
 
 Let $v = (v_t)$ be the relief from the anesthesia and let $c = (c_t)$ be the future costs of the anesthesia on her and the baby's health.
 
-**One note: if naïve, never worry that your tomorrow self might choose an option you do not like today.**
+**One note: if naive, never worry that your tomorrow self might choose an option you do not like today.**
 
 The anesthesia is considered as an immediate rewards and delayed costs. If she chooses to take the anesthesia in period $\tau$, then her intertemporal utility in period $t \le \tau$ is:
 
