@@ -4,6 +4,131 @@ author: "Clarence Koehle & Yooby Gigandet"
 output: pdf_document
 ---
 
-**1-**
+**3-**
 
 **a)**
+
+Let $u = (u_1, u_2, u_3, u_4) = (3, 5, 8, 13)$ be the utility that she gets from watching each movie for $t = 1, 2, 3, 4$.
+
+Therefore, her discounted utility from the perspective of time $t$ is given by:
+
+$$
+U_t = u_t + \beta(u_{t+1} + u_{t+2} + u_{t+3} + ...)
+$$
+
+Because Alice is naive, she wrongly believes that she is time-consistent, in other words: $\hat\beta$ = $\beta$ = 1. Therefore, she will plan on watching the last movie because $u_4 > u_3 > u_2 > u_1$. In reality she will chose the third movie because:    
+
+Summary of discounted utilities with $\beta$ = 0.5 and $\delta$ = 1:   
+
+| t         | t = 1 |     t = 2     |     t = 3    |    t = 4     | Ranking |
+| :--       | :--   | :--           | :--          | :--          | :--     |
+|From self  |       |               |              |              |         |
+|t = 1      | 3     | 0.5*5 = 2.5   | 0.5*8 = 4    | 0.5*13 = 6.5 | 4,3,1,2 |
+|perspective|       |               |              |              |         |
+|           |       |               |              |              |         |
+|From self  |       |               |              |              |         |
+|t = 2      |       | 5             | 0.5*8 = 4    | 0.5*13 = 6.5 | 4,2,3   |
+|perspective|       |               |              |              |         |
+|           |       |               |              |              |         |
+|From self  |       |               |              |              |         |
+|t = 3      |       |               | 8            | 0.5*13 = 6.5 | 3,4     |
+|perspective|       |               |              |              |         |
+
+Therefore we can see that:
+
+- At t = 1, she prefers to watch the movie during the week 4, thus she does not go to the first movie:
+$2.5 < 3 < 4 < 6.5 = u_2 < u_1 < u_3 < u_4$
+- At t = 2, she still prefers to watch the movie during the week 4, thus she does not watch the second film. 
+$4 < 5 < 6.5 = u_3 < u_2 < u_4$
+- At t = 3, she perceives a higher utility in watching the movie during the week 3 rather than during the week 4.
+$6.5 < 8 = u_4 < u_3$
+
+**b)**
+
+Because Alice is sophisticated, she knows that she is time-inconsistent, in other words: $\hat\beta$ = $\beta$ < 1.
+
+Sophisticated people perfectly anticipate the behaviors of their future selves (anticipate they will not stick to the plans) and take this into consideration in their choices over time by using backward induction. Therefore
+
+
+- At t = 3, she prefers to watch the movie in the third week because:
+$6.5 < 8 = u_4 < u_3$
+
+- At t = 2, she knows that she will choose to watch the movie during the week 3 instead of the week 4. Therefore, she compares it with her current view:
+$4 < 5 = u_3 < u_2$
+Thus, she prefers to watch the movie in the second week.
+
+- At t = 1, with the same principle as above, she compares it with her current view:
+$2.5 < 3 = u_2 < u_1$
+Thus, she prefers to watch the movie in the first week.
+
+In conclusion, if Alice is sophisticated, she will watch the movie during the first week.
+
+**c)**
+
+Naive Alice gets 3 ticket, therefore:
+
+- At t = 1, she plans to miss the movie on week 2 and therefore watch the movie on week 1:
+$2.5 < 3 < 4 < 6.5 = u_2 < u_1 < u_3 < u_4$
+
+- At t = 2, she plans to miss the movie on week 3 and therefore watch the movie on week 2:
+$4 < 5 < 6.5 = u_3 < u_2 < u_4$
+
+- At t = 3, she watches the movie on week 3 and therefore miss the one from week 4:
+$6.5 < 8 = u_4 < u_3$
+
+**d) **
+
+Sophisticated Alice gets 3 ticket, therefore:
+
+- At t = 3, she decides to watch the movie on week 3 and 4
+$6.5 < 8 = u_4 < u_3$
+
+- At t = 2, she decides to watch the movie on week 2, 3 and 4.
+$4 < 5 < 6.5 = u_3 < u_2 < u_4$
+
+- At t = 1, she decides to watch the movie on week 1 as well.
+$2.5 < 3 < 4 < 6.5 = u_2 < u_1 < u_3 < u_4$
+
+**NOT SURE ABOUT THIS ONE**
+
+**e)**
+
+If an economist believes that $\beta = 1$, we have the following utility function for Alice:
+
+$$
+U_t = u_t + \delta u_{t+1} + \delta^2u_{t+2} + \delta^3u_{t+3} + ...
+$$
+
+$$
+U_t = \sum_{\tau = 0}^{\infty} \delta^\tau u_{t+\tau}
+$$
+
+Summary of utilities with $\beta$ = 1 and $\delta$:   
+
+| t         | t = 1 |     t = 2     |     t = 3    |    t = 4     |
+| :--       | :--   | :--           | :--          | :--          |
+|From self  |       |               |              |              |
+|t = 1      | 3     | $\delta$*5    | $\delta^2$*8 | $\delta^3$*13|
+|perspective|       |               |              |              |
+|           |       |               |              |              |
+|From self  |       |               |              |              |
+|t = 2      |       | 5             | $\delta$*8   | $\delta^2$*13|
+|perspective|       |               |              |              |
+|           |       |               |              |              |
+|From self  |       |               |              |              |
+|t = 3      |       |               | 8            | $\delta$*13  |
+|perspective|       |               |              |              |
+
+
+Therefore, to find the biggest $\delta$ that an agent with exponential discounting could have such that he would choose the same 3 movies as naive Alice (in other words, movies from the first three weeks)
+
+- At t = 1, if we want Alice to watch the first movie, we must satisfy the following inequation:
+$3 > \delta*5$ <=> $\delta < \frac{3}{5}$
+
+- At t = 2, if we want Alice to watch the second movie, we must satisfy they following inequation:
+$5 > \delta*8$ <=> $\delta < \frac{5}{8}$
+
+- At t = 3, if we want Alice to watch the third movie, we must satisfy they following inequation:
+$8 > \delta*13$ <=> $\delta < \frac{8}{13}$
+
+Hence, $\delta$ < min($\frac{3}{5}$, $\frac{5}{8}$, $\frac{8}{13}$) = $\frac{3}{5}$
