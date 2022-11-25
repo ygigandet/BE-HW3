@@ -207,8 +207,6 @@ $4 < 5 < 6.5 = u_3 < u_2 < u_4$
 $2.5 < 3 < 4 < 6.5 = u_2 < u_1 < u_3 < u_4$
 Thus, she prefers to miss the second movie.
 
-**NOT SURE ABOUT THIS ONE**
-
 **e)**
 
 If an economist believes that $\beta = 1$, we have the following utility function for Alice:
@@ -250,4 +248,20 @@ $5 > \delta*8$ <=> $\delta < \frac{5}{8}$
 $8 > \delta*13$ <=> $\delta < \frac{8}{13}$
 
 Hence, $\delta$ < min($\frac{3}{5}$, $\frac{5}{8}$, $\frac{8}{13}$) = $\frac{3}{5}$
+
+**4)**
+
+Let specify the utility of each account:
+
+
+$$ 
+u(w) = \begin{cases}
+w  & , \space  \space if \space A \\ 
+w *(1+\frac{0.03}{365}d)  & ,\space  \space if \space B \\
+w *(1+\frac{0.05}{365}d) - e& ,\space  \space if \space C
+\end{cases}
+$$
+
+where $w$ = $10'000$, $d$ represents the number of days the money is in the account and $e$ is the cost of switching from account $A$ to $C$, which is equal to e.
+
 
