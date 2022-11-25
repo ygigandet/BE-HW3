@@ -94,7 +94,7 @@ $$
 
 As she is naive, she will never worry that her tomorrow self might choose an option she does not like today.
 
-**d**
+**d)**
 
 **i)**
 
@@ -117,7 +117,7 @@ $$
 v_\tau - \beta c_\tau > 0
 $$
 
-***iii)**
+**iii)**
 
 It depends on what she wants. If she doesn't want to take the anesthesia before, and then on the moment, she wants to take the anesthesia. Then she wants to commit to a decision beforehand to avoid the time-inconsistency.
 
