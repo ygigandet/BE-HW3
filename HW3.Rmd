@@ -262,6 +262,12 @@ w *(1+\frac{0.05}{365}d) - e& ,\space  \space if \space C
 \end{cases}
 $$
 
-where $w$ = $10'000$, $d$ represents the number of days the money is in the account and $e$ is the cost of switching from account $A$ to $C$, which is equal to e.
+where $w$ = $10'000$, $d$ represents the number of days the money is in the account and $e$ is the cost of switching from account $A$ to $C$, which is equal to 60.
+
+Therefore, she needs to decide each day if she invests in $A \in (0, 1)$, $B \in (0,1)$ or $C \in (0,1)$ with the constraint that $A+B+C = 1$
+
+**a)**
+
+
 
 
