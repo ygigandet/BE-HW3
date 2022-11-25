@@ -253,7 +253,6 @@ Hence, $\delta$ < min($\frac{3}{5}$, $\frac{5}{8}$, $\frac{8}{13}$) = $\frac{3}{
 
 Let specify the utility of each account:
 
-
 $$ 
 u(w) = \begin{cases}
 w  & , \space  \space if \space A \\ 
@@ -264,10 +263,42 @@ $$
 
 where $w$ = $10'000$, $d$ represents the number of days the money is in the account and $e$ is the cost of switching from account $A$ to $C$, which is equal to 60.
 
-Therefore, she needs to decide each day if she invests in $A \in (0, 1)$, $B \in (0,1)$ or $C \in (0,1)$ with the constraint that $A+B+C = 1$
+Therefore, she needs to decide each day if she keeps in $A \in (0, 1)$ or invest $B \in (0,1)$ or $C \in (0,1)$ with the constraint that $A+B+C = 1$
 
 **a)**
 
+We are in a situation in which costs are immediate and delayed rewards. 
 
+$$ 
+u_t(\tau) = \begin{cases} \beta w_\tau\ -e  & , \space  \space t = \tau \\ 
+\beta w_\tau\ - \beta e_\tau   & ,\space  \space t < \tau  \end{cases}
+$$
 
+As she is naive, she wrongly assumes that $\hat\beta = \beta = 1$. Hence:
 
+Utility of the account A is given by:
+$$
+u(w_A) = \beta w_A - e \\
+u(w_A) = 0.9 * 10'000 - 0 \\
+u(w_A) = 9'000
+$$
+
+Utility of the account B is given by:
+$$
+u(w_B) = \beta w_B - e \\
+u(w_B) = 0.9(10'000 *(1+\frac{0.03}{365}*10'950)) - 0 \\
+u(w_B) = 0.9(10'000 * 1.9) - 0 \\
+u(w_B) = 17'100
+$$
+
+Utility of account C is given by:
+$$
+u(w_C) = \beta w_C - e \\
+u(w_C) = 0.9(10'000 *(1+\frac{0.05}{365}*10'950)) - 60 \\
+u(w_C) = 0.9(10'000 * 2.5) - 60 \\
+u(w_C) = 22'440
+$$
+
+**c)**
+
+Let's assume that we are in the beginning of her investment choice, therefore, the utility at her retirement in 30 years (30 years * 365 days = 10'950 days).
