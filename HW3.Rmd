@@ -108,3 +108,17 @@ Corresponds to the "over consumption", meaning that the agent will consume more 
 $F(\delta b - p) < F(\beta\delta b - p)$
 
 
+For a firm, in this set up:
+if: $\beta = 1 \space or\space b = 0$
+Thus meaning the agent is time consistent, then the profit maximizing contract for th firm $(L^{*}, p^{*})$ has per-usage price thee value: 
+$p^{*} = a$ 
+and a lump sump fee of:
+$L^{*} = K$
+This is the case for both investment goods and Leisure goods
+
+b)
+In the case of an investment goods then:
+
+c)
+
+
