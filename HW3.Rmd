@@ -4,121 +4,65 @@ author: "Clarence Koehle & Yooby Gigandet"
 output: pdf_document
 ---
 
-**1-**
-In this situation we have the following variables:
-Birth = payoff = $V$; Labour = effort = $e$, Pain = cost of effort = $c(e)$; Knowledge over the fact that she will face pain = $\theta$
-where:
-$$c(e) = \begin{cases} c > 0, & \mbox{if } e =1 \\ c = 0, & \mbox{if } e = 0 \end{cases}$$
-
-**a)**
-- i) she would decide to not take anesthesia
-- ii) she would predict that she will not take the anesthesia since she believes that she is rational: 
-$\beta = \hat{\beta} = 1$
-- iii)
-
-**b)**
-- i) she would decide to not take anesthesia
-- ii) she would predict that she will not take the anesthesia since $\beta = \hat{\beta}$
-- iii)
-
-**c.)** 
-$\beta = 1$
-
-**d.)** 
-$\hat{\beta} = \beta$
-
-
 **2-**
+
 **a)**
-It is inconsistent because for exponential discounting, preference are constant over time for an individual, thus in theory individual should not chose the option of going through H&R Block, as the utility between "now" and in 1 "week" is the same, and because the gain is diminished when tax prepare service are used, an individual will wait instead. 
-Another way would be to check if the discount factor $\delta$ is constant over time, if not we can sefely assume that there exist inconsistency. We are going to compare immediate gain, of 2000/12 USD with gains in 4-6-12 months.
+
+**I think there are two points to be addressed: the first is why the choose the sum lump payment and not the small amounts each month. The second, why they rush to a tax preparer to get it rapidly**
+
+The exponential discounting utility model is given by:
+
+$$
+U(c_t, c_{t+1}, c_{t+2}, ...) = \sum_{\tau = 0}^{\infty} \delta^\tau u(c_{t+\tau})
+$$
+where $0 < \delta < 1$ is a discount factor.
+
+The first inconsistency is given by the fact that families choose a big lump sum in the form of a tax refund the next year instead of smaller installments added to the household head's paycheck each month. 
+
+If we assume that the big lump sum is equal to the sum of the small installments, the discount factor $\delta$ will give more weights to the small installments each month rather than the big lump sum in one year:
+
+$$
+\frac{S}{12} + \delta \frac{S}{12} + \delta^2 \frac{S}{12} + ... +\delta^{11} \frac{S}{12} > \delta^{12} S
+$$
+where $S$ is equal to the lump sum.
+
+Therefore, it makes no sense for the families to choose the big lump sum over the small installments.
+
+The second inconsistency is given by the fact that most families pay a tax preparer in an effort to get the refund ine one day or two instead of filling their taxes themselves an get the refund in a few weeks.
+
+It is inconsistent because for a dynamically consistent decision maker, preferences are constant over time. Thus, in theory individuals should not choose the option of going through H&R Block, as the utility of the tax refund between one day or two and in a few weeks is the same, and because there are an additional costs of using H&R Block, which in turn diminish the utility of the tax refund. In conclusion, an dynamically consistent decision maker will wait and fill her paperwork herself.
+
+**PAS COMPRIS CE QUE TU VEUX EXPLIQUER LA**
+
+Another way would be to check if the discount factor $\delta$ is constant over time, if not we can safely assume that there exists inconsistency. We are going to compare immediate gain, of 2000/12 USD with gains in 4-6-12 months.
 $Present\ value = PV = 2000/12$; $Future \space Value = FV = 2000/3; 2000/1$;
 with $\delta = \frac{PV}{2}$
 we have :
 $$\delta_4 = (\frac{2000/12}{2000/3})^3 \approx 0.01565 \\; \space \delta_6 = (\frac{2000/12}{2000/2})^2 \approx 0.027 \\; \space \delta_{12} = (\frac{2000/12}{2000})^1 \approx 0.0833  $$
 
 **b)**
-hyperbolic discounting individuals have a dis-utility regarding future gains. This means that they have extract more value over immediate gain over long. Therefore, because the first option imply a gain by small monthly paycheck, the value associate to each new payment is becoming lowever over time instead of staying consistent. This explain why they choose the second option. The second inconsistency is in regard to the solicitation of a tax preparer, which imply a negative impact on their overall utility. In summary, these individual are displaying impatient choice in regard to future beneficial gain, yet chose less attractive option for immediate utility gain. 
+
+The hyperbolic utility model is given by:
+
+$$
+U_t = u(c_t) + \beta[\delta u(c_{t+1}) + \delta^2 u(c_{t+2})+ ...)]
+$$
+where:   
+$\beta$ uniformly discounts all future periods.   
+$\delta$ exponentially discounts all future periods.
+
+For the first fact, because of $0 < \beta < 1$, there is a magnitude effect: small outcomes are discounted more than large outcomes. Thus, families prefer the big lump sum next year rather than the small installments each month.
+
+**Not sure of what you meant?**
+
+For the second fact,
+
+Hyperbolic discounting individuals have a dis-utility regarding future gains. This means that they have extract more value over immediate gain over long. Therefore, because the first option imply a gain by small monthly paycheck, the value associate to each new payment is becoming lowever over time instead of staying consistent. This explain why they choose the second option. The second inconsistency is in regard to the solicitation of a tax preparer, which imply a negative impact on their overall utility. In summary, these individual are displaying impatient choice in regard to future beneficial gain, yet chose less attractive option for immediate utility gain. 
 
 **c)**
 
-**3-**
-a time consistent agent with $\delta = 1;\space \beta = 1$ would chose the 4th movie since $u_1 < u_2 < u_3 < u_4$
+My idea: it is because it is a loss and losses loom larger than gains. Therefore, you want to receive the EITC and paid all your bills and then still get some money left.
 
-a)
-Because Alice is naive, she wrongly believes that she knows her future self, thus $\hat{\beta} = \beta = 1$, therefore, she will plan on watching the last movie. In reality she will chose the third movie because: 
-summary of discounted utilities with $\beta = 0.5$:
+**d)**
 
-| t         | t = 0 |     t = 1     |     t = 2    |    t = 3     | Ranking |
-| :--       | :--   | :--           | :--          | :--          | :--     |
-|From self  |       |               |              |              |         |
-|t = 0      | 3     | 0.5*5 = 2.5   | 0.5*8 = 4    | 0.5*13 = 6.5 | 2,3,1,0 |
-|perspective|       |               |              |              |         |
-|           |       |               |              |              |         |
-|From self  |       |               |              |              |         |
-|t = 1      |       | 5             | 0.5*8 = 4    | 0.5*13 = 6.5 | 2,3,1,  |
-|perspective|       |               |              |              |         |
-|           |       |               |              |              |         |
-|From self  |       |               |              |              |         |
-|t = 2      |       |               | 8            | 0.5*13 = 6.5 | 1,2     |
-|perspective|       |               |              |              |         |
-
-Therefore we can see that:
-
-- T = 0, she prefers to watch the 4th movie, thus she does not go to the first movie. 
-$2.5_{u_2} < 3_{u_1} < 4_{u_3} < 6.5_{u_4}$
-- T = 1, she still prefers the 4th movie, thus she does not go the the second film. 
-$4_{u_3} < 5_{u_2} < 6.5_{u_4}$
-- T = 2, she perceived a higher utility in watching the 3rd movie now rather than wait for the last week 
-$8_{u_3} > 6.5_{u_4}$
-
-b) 
-a sophisticate agent $\hat{\beta} = \beta$
-if she is sophisticated the, we have to look at the value backwards. The best option for Alice in :
-- T = 2 is to watch the movie in T = 2 because $8>6.5$
-- T = 1, because Alice knows that she will choose the 3d movie instead of the 4th one, she compares with her best choice. In this case it's to watch the 2nd movie, because $5 > 4$
-- T = 1, with the same principle she compares her prediction and decide to watch the first movie because $3 > 2.5$
-
-she now gets 3 ticket:
-
-- t = 1, she chooses $u_2, u_3, u_4$
-- t = 0, she chooses $u_1, u_2, u_3$
-
-c)
-- t = 0 she chooses $u_1, u_3, u_4$
-- t = 1 she chooses $u_2, u_3, u_4$
-therefore, she misses the 1st movie
-
-d)
-as seen in the second part of point b, she chooses $u_1, u_2, u_3$, therefore, she miss the 4th movie. 
-
-e)
-
-
-
-**5.**
-a)
-at t = 0 a time-inconsistent agent decide to consume C with probability:
-$F(\delta b - p)$
-However at t = 1, the agent will choose C with probability:
-$F(\beta\delta b - p)$
-Thus the difference of:
-$F(\delta b - p) - F(\beta\delta b - p)$
-Corresponds to the "over consumption", meaning that the agent will consume more that what he anticipates. Because:
-$F(\delta b - p) < F(\beta\delta b - p)$
-
-
-For a firm, in this set up:
-if: $\beta = 1 \space or\space b = 0$
-Thus meaning the agent is time consistent, then the profit maximizing contract for th firm $(L^{*}, p^{*})$ has per-usage price thee value: 
-$p^{*} = a$ 
-and a lump sump fee of:
-$L^{*} = K$
-This is the case for both investment goods and Leisure goods
-
-b)
-In the case of an investment goods then:
-
-c)
-
-
+My idea: they have the intuition that the good is durable and thus will last in time.
