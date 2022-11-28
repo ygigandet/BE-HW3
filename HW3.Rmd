@@ -147,10 +147,26 @@ then we have that $p^{*} > a$
 
 Concerning the value of $L^{*}$
 For a firm this value is defined by:
-$$\beta\delta[-L+\int_{-\infty}^{\hat{\beta}\delta b -p}(\delta b -p^{*}-c)dF(c)] = \beta\delta\overline{u}$$
+$$\beta\delta[-L+\int_{-\infty}^{\hat{\beta}\delta b -p}(\delta b -p-c)dF(c)] = \beta\delta\overline{u}$$
 This equation implies that the value optimal value of L is dependent to the participation constrain.
 Thus a firm aiming at maximizing its profit will put an L < K in order to use at its advantages the principle of overconfidence from a time-inconsistent agent by attracting him with a lower lump sump fee which will in return be compensate by its consumption.
 
 
+b)
+The first order condition  for the firm maximization profit is:
+$$p^{*} -a = -(1-\hat{\beta})\delta b\frac{f(\hat{\beta}\delta b -p^{*})}{f(\beta\delta b -p^{*})}-\frac{F(\hat{\beta}\delta b -p^{*})-F(\beta\delta b -p^{*})}{f(\beta\delta b -p^{*})}$$
+Therefore, looking only at time-inconsistent agent as otherwise with $\beta = \hat{\beta} < 1$ leads to $p^{*} = a$
+With $b > 0;\beta < \hat{\beta} < 1$, we get that $p^{*} < a$
 
+c)
+The first order condition  for the firm maximization profit is:
+$$p^{*} -a = -(1-\hat{\beta})\delta b\frac{f(\hat{\beta}\delta b -p^{*})}{f(\beta\delta b -p^{*})}-\frac{F(\hat{\beta}\delta b -p^{*})-F(\beta\delta b -p^{*})}{f(\beta\delta b -p^{*})}$$
+Therefore, looking only at time-inconsistent agent as otherwise with $\beta = \hat{\beta} < 1$ leads to $p^{*} = a$
+With $b < 0;\beta < \hat{\beta} < 1$, we get that $p^{*} > a$
 
+Because we are in a perfect competition format $p_i = p^{*}$ thus the optimal value of $L{*}$ is defined by 
+$$\beta\delta[-L^{*}+\int_{-\infty}^{\hat{\beta}\delta b -p}(\delta b -p^{*}-c)dF(c)] = \beta\delta\overline{u}$$
+if we substitute $L*$ in the maximization profit function we get:
+$$max_p\prod(p^{*}) = max_p\delta[(\int_{-\infty}^{\hat{\beta}\delta b-p^{*}}(\delta b-a-c)dF(c)-K-\overline{u})+\int_{\beta\delta b-p^{*}}^{\hat{\beta}\delta b-p^{*}}(\delta b -p^{*}-c)dF(c)]$$
+Because $L^{*}$ is determined by $\overline{u}$ and in equilibrum $\overline{u}$ expected profit is equal to 0, we have that for 
+$\beta = \hat{\beta} < 1;b<0$, $L^{*}>K$
