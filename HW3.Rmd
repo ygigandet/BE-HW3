@@ -142,8 +142,15 @@ The first order condition  for the firm maximization profit is:
 $$p^{*} -a = -(1-\hat{\beta})\delta b\frac{f(\hat{\beta}\delta b -p^{*})}{f(\beta\delta b -p^{*})}-\frac{F(\hat{\beta}\delta b -p^{*})-F(\beta\delta b -p^{*})}{f(\beta\delta b -p^{*})}$$
 Thus, in the case of a time consistent agent where: $\beta=\hat{\beta < 1}$
 the right side of the equation is equal to 0, which imply that $p^{*} = a$
-In the case of a time-inconsistent agent where $\beta < \hat{\beta} < 1\space and\space b < 0$
+In the case of a time-inconsistent agent where $\beta < \hat{\beta} < 1; b < 0$
 then we have that $p^{*} > a$
 
 Concerning the value of $L^{*}$
+For a firm this value is defined by:
+$$\beta\delta[-L+\int_{-\infty}^{\hat{\beta}\delta b -p}(\delta b -p^{*}-c)dF(c)] = \beta\delta\overline{u}$$
+This equation implies that the value optimal value of L is dependent to the participation constrain.
+Thus a firm aiming at maximizing its profit will put an L < K in order to use at its advantages the principle of overconfidence from a time-inconsistent agent by attracting him with a lower lump sump fee which will in return be compensate by its consumption.
+
+
+
 
