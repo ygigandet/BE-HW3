@@ -121,6 +121,66 @@ $$
 
 It depends on what she wants. If she doesn't want to take the anesthesia before, and then on the moment, she wants to take the anesthesia. Then she wants to commit to a decision beforehand to avoid the time-inconsistency.
 
+**2-**
+
+**a)**
+
+The exponential discounting utility model is given by:
+
+$$
+U(c_t, c_{t+1}, c_{t+2}, ...) = \sum_{\tau = 0}^{\infty} \delta^\tau u(c_{t+\tau})
+$$
+where $0 < \delta < 1$ is a discount factor.
+
+The first inconsistency is given by the fact that families choose a big lump sum in the form of a tax refund the next year instead of smaller installments added to the household head's paycheck each month. 
+
+If we assume that the big lump sum is equal to the sum of the small installments, the discount factor $\delta$ will give more weights to the small installments each month rather than the big lump sum in one year:
+
+$$
+\frac{S}{12} + \delta \frac{S}{12} + \delta^2 \frac{S}{12} + ... +\delta^{11} \frac{S}{12} > \delta^{12} S
+$$
+where $S$ is equal to the lump sum.
+
+Therefore, it makes no sense for the families to choose the big lump sum over the small installments.
+Another way would be to check if the discount factor $\delta$ is constant over time, if not we can safely assume that there exists inconsistency. We are going to compare immediate gain, of 2000/12 USD with gains in 4-6-12 months.
+$Present\ value = PV = 2000/12$; $Future \space Value = FV = \frac{2000}{3};\frac{2000}{2}; \frac{2000}{1}$;
+with $\delta = \frac{PV}{2}$
+we have :
+$$\delta_4 = (\frac{2000/12}{2000/3})^3 \approx 0.01565 \\; \space \delta_6 = (\frac{2000/12}{2000/2})^2 \approx 0.027 \\; \space \delta_{12} = (\frac{2000/12}{2000})^1 \approx 0.0833  $$
+The second inconsistency is given by the fact that most families pay a tax preparer in an effort to get the refund in one day or two instead of filling their taxes themselves an get the refund in a few weeks.
+
+It is inconsistent because for a dynamically consistent decision maker, preferences are constant over time. Thus, in theory individuals should not choose the option of going through H&R Block, as the utility of the tax refund between one day or two and in a few weeks is the same, and because there are an additional costs of using H&R Block, which in turn diminish the utility of the tax refund. In conclusion, an dynamically consistent decision maker will wait and fill her paperwork herself.
+
+**b)**
+
+The hyperbolic utility model is given by:
+
+$$
+U_t = u(c_t) + \beta[\delta u(c_{t+1}) + \delta^2 u(c_{t+2})+ ...)]
+$$
+where:   
+$\beta$ uniformly discounts all future periods.   
+$\delta$ exponentially discounts all future periods.
+
+For the first fact, because of $0 < \beta < 1$, there is a magnitude effect: small outcomes are discounted more than large outcomes. Thus, families prefer the big lump sum next year rather than the small installments each month.
+
+For the second fact,
+
+Hyperbolic discounting individuals have a dis-utility regarding future gains. This means that they put stronger relative weight on prospect when they get closer. 
+preference $(\beta,\delta)$ is defined by:
+for all $t, U^t(u_t, u_{t+1},...,u_T$
+we have $\delta^{t}u_t+\beta\sum_{\tau = t+1}^{T}\delta^{\tau}u_{\tau}$
+with $0 < \beta ,\delta \le1$
+
+**c)**
+
+For time-inconsistent agents it makes sense. As stated before, the attractiveness of direct gains loom larger than future If we now add the idea of credit cards, where the agent will postpone the cost effect of its decision, he can end up in a situation where the amount due at the end of the month exceeds its financial capacity. Thus, the only solution left for this agent is to split the payment due to the credit cards company with high interest rate. Thereby, a time-inconsistent agent in $T+1$ will considers the due payment as a present cost $c+1$, and because he is inconsistent the value of $c+1 > c+2$, he will considers settling his debts directly if the money is readily  available. 
+
+**d)**
+
+For a time-inconsistent agent it makes sense. An agent with hyperbolic discounting will act more impatiently in $t=0$ than in $t=1$.
+In this situation, if we consider that the implication of buying a new car which will be consider as a direct gain with future cost (the split payment of the leasing), the only thing that might stop the purchase might be a denied of credit loan by the bank, or simply the factor of current debts needed to be pay as explain in point 1.C. However, the implication of  lump sump payment gain may get rid of the monetary factors. Thus, in a situation where the gain of the lump sump money equate to a new period $t=0$, an agent might act impulsively and buy a new car without consistently thinking about the future due cost. Another point concerning the implication of maintenance cost, those can be considers as future cost. Thereby, with time inconsistency they would be consider lower that the direct cost of starting a leasing $c_o > c_1$, and because $c_o$ will be cover by the lump sump payment received, we can consider that the value is null. 
+
 **3-**
 
 **a)**
