@@ -194,3 +194,6 @@ Hence, she will switch to B.
 
 If the cost of transfer $e$ was lower, the naive investor will keep her money longer into account A in the hope she will naively switch to account C tomorrow. But as she is time inconsistent, she will never do it. Hence, it will reduce the number of days before retirement when she will currently switch to account B.
 
+**e)**
+
+**Not sure yet**
