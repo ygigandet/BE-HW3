@@ -156,7 +156,8 @@ b)
 The first order condition  for the firm maximization profit is:
 $$p^{*} -a = -(1-\hat{\beta})\delta b\frac{f(\hat{\beta}\delta b -p^{*})}{f(\beta\delta b -p^{*})}-\frac{F(\hat{\beta}\delta b -p^{*})-F(\beta\delta b -p^{*})}{f(\beta\delta b -p^{*})}$$
 Therefore, looking only at time-inconsistent agent as otherwise with $\beta = \hat{\beta} < 1$ leads to $p^{*} = a$
-With $b > 0;\beta < \hat{\beta} < 1$, we get that $p^{*} < a$
+With $b > 0;\beta < \hat{\beta} < 1$, we get that $p^{*} < a$. To compensate, the firm will therefore have lump sump payment that equate to $L^{*} > K$
+
 
 c)
 The first order condition  for the firm maximization profit is:
