@@ -35,7 +35,7 @@ It is inconsistent because for a dynamically consistent decision maker, preferen
 **PAS COMPRIS CE QUE TU VEUX EXPLIQUER LA**
 
 Another way would be to check if the discount factor $\delta$ is constant over time, if not we can safely assume that there exists inconsistency. We are going to compare immediate gain, of 2000/12 USD with gains in 4-6-12 months.
-$Present\ value = PV = 2000/12$; $Future \space Value = FV = 2000/3; 2000/1$;
+$Present\ value = PV = 2000/12$; $Future \space Value = FV = \frac{2000}{3};\frac{2000}{2}; \frac{2000}{1}$;
 with $\delta = \frac{PV}{2}$
 we have :
 $$\delta_4 = (\frac{2000/12}{2000/3})^3 \approx 0.01565 \\; \space \delta_6 = (\frac{2000/12}{2000/2})^2 \approx 0.027 \\; \space \delta_{12} = (\frac{2000/12}{2000})^1 \approx 0.0833  $$
