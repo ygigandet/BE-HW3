@@ -62,9 +62,8 @@ with $0 < \beta ,\delta \le1$
 For time-inconsistent agents it makes sense. As stated before, the attractiveness of direct gains loom larger than future If we now add the idea of credit cards, where the agent will postpone the cost effect of its decision, he can end up in a situation where the amount due at the end of the month exceeds its financial capacity. Thus, the only solution left for this agent is to fractionate the payment due to the credit cards company with high interest rate. Thereby, a time-inconsistent agent in $T+1$ will considers the due payment as a present cost $c+1$, and because he is inconsistent the value of $c+1 > c+2$, he will considers settling his debts directly if the money is available. 
 
 
-
-My idea: it is because it is a loss and losses loom larger than gains. Therefore, you want to receive the EITC and paid all your bills and then still get some money left.
-
 **d)**
+For a time-inconsistent agent it makes sense. An agent with hyperbolic discounting will act more impatiently in $t=0$ than in $t=1$.
+In this situation, if we consider that the implication of buying a new car which will be consider as a direct gain with future cost (the fractinate payment of the leasing), the only thing that might stop the purchase might be a denied of credit loan by the bank, or simply the factor of current debts needed to be pay as explain in point 1.C. However, the implication of  lump sump payment gain may get rid of the monetary factors. Thus, in a situation where the gain of the lump sump money equate to a new period $t=0$, an agent might act impusivly and buy a new car without consistently thinking about the future due cost.
 
 My idea: they have the intuition that the good is durable and thus will last in time.
