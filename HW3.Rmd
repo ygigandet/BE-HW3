@@ -207,8 +207,6 @@ $4 < 5 < 6.5 = u_3 < u_2 < u_4$
 $2.5 < 3 < 4 < 6.5 = u_2 < u_1 < u_3 < u_4$
 Thus, she prefers to miss the second movie.
 
-**NOT SURE ABOUT THIS ONE**
-
 **e)**
 
 If an economist believes that $\beta = 1$, we have the following utility function for Alice:
