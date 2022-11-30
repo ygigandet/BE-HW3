@@ -117,76 +117,73 @@ Hence, she thinks that tomorrow she will switch from the account A to C because 
 
 **b)**
 
+
+
+**c)**
+
 For her to change her mind, we need to satisfy the following:
 
 $$
 u(w_B) \ge u(w_C)
 $$
 $$
-1^d(10'000 *(1+\frac{0.03}{365}*d)) - 1*0 \ge 1^d(10'000 *(1+\frac{0.05}{365}*d)) - 1 * 60
+0.9^d(10'000 *(1+\frac{0.03}{365}*d)) - 1*0 \ge 0.9^d(10'000 *(1+\frac{0.05}{365}*d)) - 0.9 * 60
 $$
 $$
-10'000 *(1+\frac{0.03}{365}*d) \ge 10'000 *(1+\frac{0.05}{365}*d) - 1 * 60
+10'000 *(1+\frac{0.03}{365}*d) \ge 10'000 *(1+\frac{0.05}{365}*d) - 0.9 * 60
 $$
 $$
-60 \ge \frac{10'000 *(1+\frac{0.05}{365}*d)}{10'000 *(1+\frac{0.03}{365}*d)}
+54 \ge \frac{10'000 *(1+\frac{0.05}{365}*d)}{10'000 *(1+\frac{0.03}{365}*d)}
 $$
 $$
-60 \ge \frac{\frac{0.05}{365}*d}{\frac{0.03}{365}*d}
+54 \ge 1 + \frac{\frac{0.05}{365}}{\frac{0.03}{365}}*d
 $$
 
 $$
-60 \ge \frac{\frac{0.05}{365}*d}{\frac{0.03}{365}*d}
+53 \ge \frac{\frac{0.05}{365}}{\frac{0.03}{365}} * d
 $$
 $$
-60 \ge \frac{5}{3}d
+53 \ge \frac{5}{3}d
 $$
 $$
-36 \ge d
+31.8 \ge d
 $$
-She will transfer the money to the account B when there will be just 36 days remaining before her retirement.
-
-Let's check if it works:
+She will transfer the money to the account B when there will be just 31 days remaining before her retirement. Hence, let's check what happens when there is 32 days remaining:
 
 Utility of the account A is given by:
 $$
-u(w_A) = \beta w_A - e
+u(w_A) = \beta^d w - e
 $$
 $$
-u(w_A) = 0.9^{36} * 10'000 - 0
+u(w_A) = 0.9^{32} * 10'000 - 0
 $$
 $$
-u(w_A) = 225.284
+u(w_A) \approx 343.4
 $$
 
 Utility of the account B is given by:
 $$
-u(w_B) = \beta w_B - e
+u(w_B) = \beta^d w - e
 $$
 $$
-u(w_B) = 0.9^{36}(10'000 *(1+\frac{0.03}{365}*36)) - 0
+u(w_B) = 0.9^{32}(10'000 *(1+\frac{0.03}{365}*32)) - 0
 $$
 $$
-u(w_B) = 225.9506
+u(w_B) \approx 344.3
 $$
 
 Utility of the account C is given by:
 $$
-u(w_C) = \beta w_C - e
+u(w_C) = \beta^d w_C - e
 $$
 $$
-u(w_C) = 0.9^{36}(10'000 *(1+\frac{0.05}{365}*36)) - 60
+u(w_C) = 0.9^{32}(10'000 *(1+\frac{0.05}{365}*32)) - 60
 $$
 $$
-u(w_C) = 166.395
+u(w_C) \approx 284.9
 $$
 
-Hence, she will switch to B.
-
-
-**c)**
-
--
+Hence, she will switch from the account A to the account B when there would be just 32 days remaining before she retires.
 
 **d)**
 
