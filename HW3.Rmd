@@ -6,19 +6,21 @@ output: pdf_document
 
 **4)**
 
-Let specify the utility of each account:
+Let's specify the expected utility of each account:
 
-$$ 
-u(w) = \begin{cases}
-w  & , \space  \space if \space A \\ 
-w *(1+\frac{0.03}{365}d)  & ,\space  \space if \space B \\
-w *(1+\frac{0.05}{365}d) - e& ,\space  \space if \space C
-\end{cases}
+$$
+E(u(w_A)) = w
+$$
+$$
+E(u(w_B)) = w *(1+\frac{0.03}{365}*d)
+$$
+$$
+E(u(w_C)) = w *(1+\frac{0.05}{365}*d) - e
 $$
 
-where $w$ = $10'000$, $d$ represents the number of days the money is in the account and $e$ is the cost of switching from account $A$ to $C$, which is equal to 60.
+where $w$ = $10'000$, $d$ represents the number of days the money spends in the account and $e$ is the cost of switching from account $A$ to $C$, which is equal to 60.
 
-Therefore, she needs to decide each day if she keeps in $A \in (0, 1)$ or invest $B \in (0,1)$ or $C \in (0,1)$ with the constraint that $A+B+C = 1$
+Before going through the exercise, we can easily estimate that $E(u(w_C)) > E(u(w_B)) > E(u(w_A))$. Hence, she should directly place her money in the account C if she was rational and uility maximizer.
 
 **a)**
 
@@ -29,11 +31,13 @@ u_t(\tau) = \begin{cases} \beta w_\tau\ -e  & , \space  \space t = \tau \\
 \beta w_\tau\ - \beta e_\tau   & ,\space  \space t < \tau  \end{cases}
 $$
 
-Hence, we first compute the utility of switching the account right now:
+where $\beta$ represent the daily discounter.
+
+Hence, we first compute the utility of each account from the first day.
 
 Utility of the account A is given by:
 $$
-u(w_A) = \beta w_A - e
+u(w_A) = \beta^d w - e
 $$
 $$
 u(w_A) = 0.9^{10950} * 10'000 - 0
@@ -44,13 +48,10 @@ $$
 
 Utility of the account B is given by:
 $$
-u(w_B) = \beta w_B - e
+u(w_B) = \beta^d w - e
 $$
 $$
 u(w_B) = 0.9^{10950}(10'000 *(1+\frac{0.03}{365}*10'950)) - 0
-$$
-$$
-u(w_B) = 0.9^{10950}(10'000 * 1.9) - 0
 $$
 $$
 u(w_B) = 0
@@ -58,43 +59,38 @@ $$
 
 Utility of the account C is given by:
 $$
-u(w_C) = \beta w_C - e
+u(w_C) = \beta^d w_C - e
 $$
 $$
 u(w_C) = 0.9^{10950}(10'000 *(1+\frac{0.05}{365}*10'950)) - 60
 $$
 $$
-u(w_C) = 0.9^{10950}(10'000 * 2.5) - 60
-$$
-$$
 u(w_C) = -60
 $$
 
-So by looking at it, she would keep the money in the account A. However, let's see if she does it tomorrow:
-
-As she is naive, she wrongly assumes that $\hat\beta = \beta = 1$. 
-
-Account A:
+So, she would keep the money in the account A because $u(w_A) = u(w_B) > u(w_C)$. However, let's see what she thinks she will do tomorrow. As she is naive, she wrongly assumes that $\hat\beta = \beta = 1$ when in fact $\beta < \hat\beta = 1$.
 
 Utility of the account A is given by:
+
 $$
-u(w_A) = \beta w_A - \beta e
+u(w_A) = \hat\beta^d w_A - \hat\beta e
 $$
 $$
-u(w_A) = 1^{10950} * 10'000 - 1 * 0
+u(w_A) = 1^{10949} * 10'000 - 1 * 0
 $$
 $$
 u(w_A) = 10'000
 $$
 
-Account B:
+Utility of the account B is given by:
 
 $$
-u(w_B) = \beta w_B - \beta e
+u(w_B) = \hat\beta^d w_B - \hat\beta e
 $$
 $$
 u(w_B) = 1^{10949}(10'000 *(1+\frac{0.03}{365}*10'949)) - 1*0
 $$
+
 $$
 u(w_B) = 1^{10949}(10'000 * 1.9) - 1 *0
 $$
@@ -102,10 +98,10 @@ $$
 u(w_B) = 19'000
 $$
 
-Account C:
+Utility of the account C is given by:
 
 $$
-u(w_C) = \beta w_C - \beta e
+u(w_C) = \hat\beta^d w_C - \hat\beta e
 $$
 $$
 u(w_C) = 1^{10949}(10'000 *(1+\frac{0.05}{365}*10'949)) - 1 * 60
@@ -116,6 +112,8 @@ $$
 $$
 u(w_C) = 24'938.63
 $$
+
+Hence, she thinks that tomorrow she will switch from the account A to C because $u(w_C) > u(w_B) > u(w_A)$.
 
 **b)**
 
