@@ -309,7 +309,7 @@ $8 > \delta*13$ <=> $\delta < \frac{8}{13}$
 
 Hence, $\delta$ < min($\frac{3}{5}$, $\frac{5}{8}$, $\frac{8}{13}$) = $\frac{3}{5}$
 
-**4)**
+**4-**
 
 Let's specify the expected utility of each account:
 
@@ -498,7 +498,7 @@ If the cost of transfer $e$ was lower, the naive investor will keep her money lo
 
 If $\delta$ was lower than 1, the naive investor will keep her money even longer than before into account A. And then she will switch to account B even closer to retirement because the $\delta$ will diminish the value of the investment.
 
-**5**
+**5-**
 
 **a)**
 
