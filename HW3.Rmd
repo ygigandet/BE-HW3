@@ -95,7 +95,7 @@ $$
 u(w_B) = 1^{10949}(10'000 * 1.9) - 1 *0
 $$
 $$
-u(w_B) = 19'000
+u(w_B) \approx 18'999
 $$
 
 Utility of the account C is given by:
@@ -110,7 +110,7 @@ $$
 u(w_C) = 1^{10949}(10'000 * 2.49) - 1*60
 $$
 $$
-u(w_C) = 24'938.63
+u(w_C) \approx 24'939
 $$
 
 Hence, she thinks that tomorrow she will switch from the account A to C because $u(w_C) > u(w_B) > u(w_A)$.
