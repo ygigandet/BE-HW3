@@ -117,6 +117,10 @@ Hence, she thinks that tomorrow she will switch from the account A to C because 
 
 **b)**
 
+She will keep doing this until $0.9^d > 0$:
+
+
+
 
 
 **c)**
