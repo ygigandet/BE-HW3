@@ -117,10 +117,31 @@ Hence, she thinks that tomorrow she will switch from the account A to C because 
 
 **b)**
 
-She will keep doing this until $0.9^d > 0$:
+She will keep doing this until $0.9^d$ is significantly larger than 0. As we can see in the table below, it will be somehow close to the retirement.
 
+| d         | $0.9^d$       |
+| :--:      | :--:          |
+| 1         | 0.9^1 = 0.9   |
+| 2         | 0.9^2 = 0.81  |
+| 3         | 0.9^3 = 0.729 |
+| ...       | ...           |
+| 10        | 0.9^10 = 0.35 |
+| ...       | ...           |
+| 20        | 0.9^20 = 0.12 |
+| ...       | ...           |
+| 30        | 0.9^30 = 0.04 |
+| ...       | ...           |
+| 50        | 0.9^50 = 0.005|
 
+When this happens, we know that the accounts B and C are more interesting than the account A with no interest rate. In addition, as there is a cost e from switching from account A to C, there will be a time where the account B is more interesting than the account C due to this transaction cost, even if the account C has a bigger return on investment (5% > 3%)
 
+**c) bis**
+
+For her to change her mind, we need to satisfy the following
+
+$$
+u(w_B) > u(w_A)
+$$
 
 
 **c)**
