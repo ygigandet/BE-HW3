@@ -15,7 +15,7 @@ $$
 E(u(w_B)) = w *(1+\frac{0.03}{365}*d)
 $$
 $$
-E(u(w_C)) = w *(1+\frac{0.05}{365}*d) - e
+E(u(w_C)) = (w-e) *(1+\frac{0.05}{365}*d)
 $$
 
 where $w$ = $10'000$, $d$ represents the number of days the money spends in the account and $e$ is the cost of switching from account $A$ to $C$, which is equal to 60.
@@ -24,23 +24,14 @@ Before going through the exercise, we can easily estimate that $E(u(w_C)) > E(u(
 
 **a)**
 
-We are in a situation in which costs are immediate and delayed rewards. 
-
-$$ 
-u_t(\tau) = \begin{cases} \beta w_\tau\ -e  & , \space  \space t = \tau \\ 
-\beta w_\tau\ - \beta e_\tau   & ,\space  \space t < \tau  \end{cases}
-$$
-
-where $\beta$ represent the daily discounter.
-
-Hence, we first compute the utility of each account from the first day.
+We first compute the utility of each account from the first day.
 
 Utility of the account A is given by:
 $$
-u(w_A) = \beta^d w - e
+u(w_A) = \beta^d w
 $$
 $$
-u(w_A) = 0.9^{10950} * 10'000 - 0
+u(w_A) = 0.9^{10950} * 10'000
 $$
 $$
 u(w_A) = 0
@@ -48,10 +39,10 @@ $$
 
 Utility of the account B is given by:
 $$
-u(w_B) = \beta^d w - e
+u(w_B) = \beta^d w
 $$
 $$
-u(w_B) = 0.9^{10950}(10'000 *(1+\frac{0.03}{365}*10'950)) - 0
+u(w_B) = 0.9^{10950}(10'000 *(1+\frac{0.03}{365}*10'950))
 $$
 $$
 u(w_B) = 0
@@ -59,24 +50,24 @@ $$
 
 Utility of the account C is given by:
 $$
-u(w_C) = \beta^d w_C - e
+u(w_C) = \beta^d (w-e)
 $$
 $$
-u(w_C) = 0.9^{10950}(10'000 *(1+\frac{0.05}{365}*10'950)) - 60
+u(w_C) = 0.9^{10950}(9'940 *(1+\frac{0.05}{365}*10'950))
 $$
 $$
-u(w_C) = -60
+u(w_C) = 0
 $$
 
-So, she would keep the money in the account A because $u(w_A) = u(w_B) > u(w_C)$. However, let's see what she thinks she will do tomorrow. As she is naive, she wrongly assumes that $\hat\beta = \beta = 1$ when in fact $\beta < \hat\beta = 1$.
+So, she would keep the money in the account A because $u(w_A) = u(w_B) = u(w_C)$. However, let's see what she thinks she will do tomorrow. As she is naive, she wrongly assumes that $\hat\beta = \beta = 1$ when in fact $\beta < \hat\beta = 1$.
 
 Utility of the account A is given by:
 
 $$
-u(w_A) = \hat\beta^d w_A - \hat\beta e
+u(w_A) = \hat\beta^d w_A
 $$
 $$
-u(w_A) = 1^{10949} * 10'000 - 1 * 0
+u(w_A) = 1^{10949} * 10'000
 $$
 $$
 u(w_A) = 10'000
@@ -85,14 +76,14 @@ $$
 Utility of the account B is given by:
 
 $$
-u(w_B) = \hat\beta^d w_B - \hat\beta e
+u(w_B) = \hat\beta^d w_B
 $$
 $$
-u(w_B) = 1^{10949}(10'000 *(1+\frac{0.03}{365}*10'949)) - 1*0
+u(w_B) = 1^{10949}(10'000 *(1+\frac{0.03}{365}*10'949))
 $$
 
 $$
-u(w_B) = 1^{10949}(10'000 * 1.9) - 1 *0
+u(w_B) = 1^{10949}(10'000 * 1.9)
 $$
 $$
 u(w_B) \approx 18'999
@@ -101,16 +92,13 @@ $$
 Utility of the account C is given by:
 
 $$
-u(w_C) = \hat\beta^d w_C - \hat\beta e
+u(w_C) = \hat\beta^d (w_C-e)
 $$
 $$
-u(w_C) = 1^{10949}(10'000 *(1+\frac{0.05}{365}*10'949)) - 1 * 60
+u(w_C) = 1^{10949}(9'940 *(1+\frac{0.05}{365}*10'949))
 $$
 $$
-u(w_C) = 1^{10949}(10'000 * 2.49) - 1*60
-$$
-$$
-u(w_C) \approx 24'939
+u(w_C) \approx 24'848.6
 $$
 
 Hence, she thinks that tomorrow she will switch from the account A to C because $u(w_C) > u(w_B) > u(w_A)$.
@@ -132,10 +120,11 @@ She will keep doing this until $0.9^d$ is significantly larger than 0. As we can
 | 30        | 0.9^30 = 0.04 |
 | ...       | ...           |
 | 50        | 0.9^50 = 0.005|
+| ...       | ...           |
 
-When this happens, we know that the accounts B and C are more interesting than the account A with no interest rate. In addition, as there is a cost e from switching from account A to C, there will be a time where the account B is more interesting than the account C due to this transaction cost, even if the account C has a bigger return on investment (5% > 3%)
+When this happens, we know that the accounts B and C are more interesting than the account A with no interest rate. In addition, as there is a cost e from switching from account A to C, there will be a time where the account B is more interesting than the account C due to this transaction cost, which diminish the investment amount by $e$, even if the account C has a bigger return on investment (5% > 3%).
 
-**c) bis**
+**c)**
 
 For her to change her mind, we need to satisfy the following:
 
@@ -148,76 +137,58 @@ $$
 $$ 
 \begin{cases} 
 0.9^d[10'000(1+\frac{0.03}{365}d)] > 0.9^d * 10'000 \\ 
-0.9^d[10'000(1+\frac{0.03}{365}d)] > 0.9^d[10'000(1+\frac{0.05}{365}d)] - 60  
+0.9^d[10'000(1+\frac{0.03}{365}d)] > 0.9^d[9'940(1+\frac{0.05}{365}d)]  
 \end{cases}
 $$
 Therefore, as soon as $0.9^d > 0$ the first equation is always satisfied. Therefore, we need to solve the second equation:
 
 $$
-0.9^d[10'000(1+\frac{0.03}{365}d)] > 0.9^d[10'000(1+\frac{0.05}{365}d)] - 60
+0.9^d[10'000(1+\frac{0.03}{365}d)] > 0.9^d[9'940(1+\frac{0.05}{365}d)]
 $$
 $$
-60 > 0.9^d[10'000(1+\frac{0.05}{365}d)] - 0.9^d[10'000(1+\frac{0.03}{365}d)]
+d < 21'900/197 \approx 111.2 
 $$
-$$
-60 > 0.9^d[10'000(1+\frac{0.05}{365}d) - (10'000*(1+\frac{0.03}{365}d))]
-$$
-$$
-60 > 0.9^d[10'000 + 10'000 * \frac{0.05}{365}d - 10'000 - 10'000*\frac{0.03}{365}d]
-$$
-$$
-60 > 0.9^d[(10'000*\frac{0.05}{365} - 10'000*\frac{0.03}{365})*d]
-$$
-$$
-60 > 0.9^d[\frac{200}{365}*d]
-$$
-
-She will transfer the money to the account B when there will be just 35 days remaining before her retirement. Hence, let's check what happens when there is 35 days remaining:
+She will transfer the money to the account B when there will be just 111 days remaining before her retirement. Hence, let's check what happens when there is 111 days remaining:
 
 Utility of the account A is given by:
 $$
-u(w_A) = \beta^d w - e
+u(w_A) = \beta^d w
 $$
 $$
-u(w_A) = 0.9^{35} * 10'000 - 0
+u(w_A) = 0.9^{111} * 10'000 - 0
 $$
 $$
-u(w_A) \approx 250
+u(w_A) \approx 0.083
 $$
 
 Utility of the account B is given by:
 $$
-u(w_B) = \beta^d w - e
+u(w_B) = \beta^d w
 $$
 $$
-u(w_B) = 0.9^{35}(10'000 *(1+\frac{0.03}{365}*35)) - 0
+u(w_B) = 0.9^{111}(10'000 *(1+\frac{0.03}{365}*111))
 $$
 $$
-u(w_B) \approx 251
+u(w_B) \approx 0.084
 $$
 
 Utility of the account C is given by:
 $$
-u(w_C) = \beta^d w_C - e
+u(w_C) = \beta^d (w_C - e)
 $$
 $$
-u(w_C) = 0.9^{35}(10'000 *(1+\frac{0.05}{365}*35)) - 60
+u(w_C) = 0.9^{111}(9'940 *(1+\frac{0.05}{365}*111))
 $$
 $$
-u(w_C) \approx 191
+u(w_C) \approx 0.084
 $$
 
-Hence, she will switch from the account A to the account B when there would be just 35 days remaining before she retires.
+Hence, she will switch from the account A to the account B when there would be just 111 days remaining before she retires as $u(w_B) > u(w_C) > u(w_A)$
 
 **d)**
 
-If the cost of transfer $e$ was lower, the naive investor will keep her money longer into account A in the hope she will naively switch to account C tomorrow. But as she is time inconsistent, she will never do it. Hence, it will reduce the number of days before retirement when she will currently switch to account B.
+If the cost of transfer $e$ was lower, the naive investor will keep her money longer into account A in the hope she will naively switch to account C tomorrow. But as she is time inconsistent, she will never do it. Hence, she will switch to account B even later.
 
 **e)**
 
-
-
-$$0.9^d[10'000(1+\frac{0.03}{365}d)] > 0.9^d[9940(1+\frac{0.05}{365}d)]$$
-$$d < 21'900/197$$
-
-**Not sure yet**
+If $\delta$ was lower than 1, the naive investor will keep her money even longer than before into account A. And then she will switch to account B even closer to retirement because the $\delta$ will diminish the value of the investment.
