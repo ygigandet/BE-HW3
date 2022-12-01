@@ -532,7 +532,9 @@ Thus a firm aiming at maximizing its profit will put an L < K in order to use at
 The first order condition  for the firm maximization profit is:
 $$p^{*} -a = -(1-\hat{\beta})\delta b\frac{f(\hat{\beta}\delta b -p^{*})}{f(\beta\delta b -p^{*})}-\frac{F(\hat{\beta}\delta b -p^{*})-F(\beta\delta b -p^{*})}{f(\beta\delta b -p^{*})}$$
 Therefore, looking only at time-inconsistent agent as otherwise with $\beta = \hat{\beta} < 1$ leads to $p^{*} = a$
-With $b > 0;\beta < \hat{\beta} < 1$, we get that $p^{*} < a$. To compensate, the firm will therefore have lump sump payment that equate to $L^{*} > K$
+With $b > 0;\beta < \hat{\beta} < 1$, we get that $p^{*} < a$. To compensate, the firm will therefore have lump sump payment that equate to $L^{*} > K$ because of the following formula:
+$$max_{L,p}\delta [L^{*}-K+F(\beta\delta b-p)(p-a)]$$
+With 
 
 
 **c)**
@@ -545,5 +547,6 @@ Because we are in a perfect competition format $p_i = p^{*}$ thus the optimal va
 $$\beta\delta[-L^{*}+\int_{-\infty}^{\hat{\beta}\delta b -p}(\delta b -p^{*}-c)dF(c)] = \beta\delta\overline{u}$$
 if we substitute $L*$ in the maximization profit function we get:
 $$max_p\prod(p^{*}) = max_p\delta[(\int_{-\infty}^{\hat{\beta}\delta b-p^{*}}(\delta b-a-c)dF(c)-K-\overline{u})+\int_{\beta\delta b-p^{*}}^{\hat{\beta}\delta b-p^{*}}(\delta b -p^{*}-c)dF(c)]$$
-Because $L^{*}$ is determined by $\overline{u}$ and in equilibrum $\overline{u}$ expected profit is equal to 0, we have that for 
-$\beta = \hat{\beta} < 1;b<0$, $L^{*}>K$
+Because $L^{*}$ is determined by $\overline{u}$ and in equilibrium $\overline{u}$ expected profit is equal to 0, we have that for 
+$\beta = \hat{\beta} < 1;b<0$, $L^{*}>K$, because of the following formula:
+$$max_{L,p}\delta [L^{*}-K+F(\beta\delta b-p)(p-a)]$$
