@@ -4,11 +4,11 @@ author: "Clarence Koehle & Yooby Gigandet"
 output: pdf_document
 ---
 
-**1-**
+**Question 1-**
 
 Let $v = (v_t)$ be the relief from the anesthesia and let $c = (c_t)$ be the future costs of the anesthesia on her and the baby's health.
 
-The anesthesia is considered as an immediate rewards and delayed costs. If she chooses to take the anesthesia in period $\tau$, then her intertemporal utility in period $t \le \tau$ is:
+The anesthesia is considered as an immediate reward and delayed costs. If she chooses to take the anesthesia in period $\tau$, then her intertemporal utility in period $t \le \tau$ is:
 
 $$ 
 U_t(\tau) = \begin{cases}  v_\tau - \beta c_\tau\,  & , \space  \space t = \tau \\ 
@@ -38,12 +38,12 @@ $$
 As she is naive, she assumes that her future self will be time-consistent which is not the case. Hence:
 
 $$
-v_\tau - \beta c_\tau > 0
+v_\tau - \hat\beta c_\tau > 0
 $$
 
 **iii)**
 
-As we have seen above, she will never worry that her tomorrow self might choose an option that she does not like today.
+As we have seen above, she will never worry that her tomorrow self might choose an option that she does not like today. The definition of being naive.
 
 **b)**
 
@@ -70,7 +70,7 @@ $$
 
 **iii)**
 
-It depends on what she wants. If she doesn't want to take the anesthesia before, and then on the moment, she wants to take the anesthesia. Then she wants to commit to a decision beforehand to avoid the time-inconsistency.
+It depends on what she wants. If we assume that the delayed costs are bigger than the instant reward, if she doesn't want to take the anesthesia before, and then on the moment, she wants to take the anesthesia. Then she wants to commit to a decision beforehand to avoid the time-inconsistency.
 
 **c)**
 
@@ -87,7 +87,7 @@ $$
 As she is naive, she assumes that her future self will be time-consistent. Hence, the same condition applies as under the point a) ii):
 
 $$
-v_\tau - \beta c_\tau > 0
+v_\tau - \hat\beta c_\tau > 0
 $$
 
 **iii)**
@@ -119,9 +119,9 @@ $$
 
 **iii)**
 
-It depends on what she wants. If she doesn't want to take the anesthesia before, and then on the moment, she wants to take the anesthesia. Then she wants to commit to a decision beforehand to avoid the time-inconsistency.
+Exactly the same as point b)iii).
 
-**2-**
+**Question 2-**
 
 **a)**
 
@@ -174,14 +174,14 @@ with $0 < \beta ,\delta \le1$
 
 **c)**
 
-For time-inconsistent agents it makes sense. As stated before, the attractiveness of direct gains loom larger than future If we now add the idea of credit cards, where the agent will postpone the cost effect of its decision, he can end up in a situation where the amount due at the end of the month exceeds its financial capacity. Thus, the only solution left for this agent is to split the payment due to the credit cards company with high interest rate. Thereby, a time-inconsistent agent in $T+1$ will considers the due payment as a present cost $c+1$, and because he is inconsistent the value of $c+1 > c+2$, he will considers settling his debts directly if the money is readily  available. 
+For time-inconsistent agents it makes sense. As stated before, the attractiveness of direct gains loom larger than future gains. If we now add the idea of credit cards, where the agent will postpone the cost effect of her decision, she can end up in a situation where the amount due at the end of the month exceeds her financial capacity. Thus, the only solution left for this agent is to split the payment due to the credit cards company with high interest rate. Thereby, a time-inconsistent agent in $T+1$ will considers the due payment as a present cost $c+1$, and because she is inconsistent the value of $c+1 > c+2$, she will considers settling her debts directly if the money is readily available. 
 
 **d)**
 
 For a time-inconsistent agent it makes sense. An agent with hyperbolic discounting will act more impatiently in $t=0$ than in $t=1$.
-In this situation, if we consider that the implication of buying a new car which will be consider as a direct gain with future cost (the split payment of the leasing), the only thing that might stop the purchase might be a denied of credit loan by the bank, or simply the factor of current debts needed to be pay as explain in point 1.C. However, the implication of  lump sump payment gain may get rid of the monetary factors. Thus, in a situation where the gain of the lump sump money equate to a new period $t=0$, an agent might act impulsively and buy a new car without consistently thinking about the future due cost. Another point concerning the implication of maintenance cost, those can be considers as future cost. Thereby, with time inconsistency they would be consider lower that the direct cost of starting a leasing $c_o > c_1$, and because $c_o$ will be cover by the lump sump payment received, we can consider that the value is null. 
+In this situation, if we consider that the implication of buying a new car which will be consider as a direct gain with future cost (the split payment of the leasing), the only thing that might stop the purchase might be a denied of credit loan by the bank, or simply the factor of current debts needed to be pay as explain in point 1.C. However, the implication of  lump sump payment gain may get rid of the monetary factors. Thus, in a situation where the gain of the lump sump money equate to a new period $t=0$, an agent might act impulsively and buy a new car without consistently thinking about the future due cost. Another point concerning the implication of maintenance cost, those can be considered as future cost. Thereby, with time inconsistency they would be considered lower that the direct cost of starting a leasing $c_o > c_1$, and because $c_o$ will be covered by the lump sump payment received, we can consider that the value is null. 
 
-**3-**
+**Question 3-**
 
 **a)**
 
@@ -309,7 +309,7 @@ $8 > \delta*13$ <=> $\delta < \frac{8}{13}$
 
 Hence, $\delta$ < min($\frac{3}{5}$, $\frac{5}{8}$, $\frac{8}{13}$) = $\frac{3}{5}$
 
-**4-**
+**Question 4-**
 
 Let's specify the expected utility of each account:
 
@@ -427,7 +427,7 @@ She will keep doing this until $0.9^d$ is significantly larger than 0. As we can
 | 50        | 0.9^50 = 0.005|
 | ...       | ...           |
 
-When this happens, we know that the accounts B and C are more interesting than the account A with no interest rate. In addition, as there is a cost e from switching from account A to C, there will be a time where the account B is more interesting than the account C due to this transaction cost, which diminish the investment amount by $e$, even if the account C has a bigger return on investment (5% > 3%).
+When this happens, we know that the accounts B and C are more interesting than the account A with no interest rate. In addition, as there is a cost e from switching from account A to C, there will be a time where the account B is more interesting than the account C due to this transaction cost, which diminishes the investment amount by $e$, even if the account C has a bigger return on investment (5% > 3%).
 
 **c)**
 
@@ -498,7 +498,7 @@ If the cost of transfer $e$ was lower, the naive investor will keep her money lo
 
 If $\delta$ was lower than 1, the naive investor will keep her money even longer than before into account A. And then she will switch to account B even closer to retirement because the $\delta$ will diminish the value of the investment.
 
-**5-**
+**Question 5-**
 
 **a)**
 
